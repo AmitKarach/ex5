@@ -16,24 +16,14 @@ each graph has two hashmaps
 2.represnting all the edges in the graph with anther hashmap in it 
 each node has a row and there- he has a hashmap with each node he is neighbor with and the edge weight
 
-we have a few functions in here:
- getNode(int key)-returns a node from the graph
- hasEdge(int node1, int node2)-checks if there is an edge between them
- getEdge(int node1, int node2)-return the weight of the edge between two nodes
- addNode(int key)- add node to the graph
- connect(int node1, int node2, double w)- connects two nodes
- getV()-returns a list of all the graph nodes
- getV(int node_id)-returns a list of the node neighbors
- removeNode(int key)-removes a node
- removeEdge(int node1, int node2)-removes a edge
- nodeSize()-returns the number of nodes in the graph
- edgeSize()-returns the number of edges in the graph
- getMC()-returns the number of changes this graph had
- equals(Object obj)- a deep check if two graph are equals
- 
 
 
 WGraph_Algo:
 using the code from WGraph_DS here we are doing some fun stuff with the graph 
 like checking if he is connected saving and oding graph to a file and more:)
+we will use here a code name dijkstra algorithm which i edited to fit to this graph
+this algoritem goes through every node and gives them as a tag their weight from a certion node
+this will help us to find if the graph is connected and what is the shortest path between nodes
 
+
+we also have a test file in here with a test that checks our work:) 
